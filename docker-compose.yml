@@ -1,0 +1,21 @@
+version: '3'
+services:
+    db:
+      image: "oracle/database:12.1.0.2-ee"
+      restart: "unless-stopped"
+      ports:
+        - 1521:1521
+        # - 8080:8080
+        - 5500:5500
+      volumes:
+        - ./setup-scripts:/opt/oracle/scripts/setup
+        - ./dump:/opt/oracle/dump
+      environment: 
+        - "ORACLE_PWD=oracle"
+        # schema of the dump you want to import
+        - "SOURCE_SCHEMA=change-or-delete-me"
+        # tablespace of the dump you want to import
+        - "SOURCE_TABLESPACE=change-or-delete-me"
+        # you may want to exclude `GRANT`: `EXCLUDE=USER,GRANT', if your dump contains them
+        # if you dont have anything to exclude, remove the variable
+        - "EXCLUDE=user"
