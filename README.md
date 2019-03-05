@@ -21,6 +21,8 @@ setup, if you haven't done so already.
     cd OracleDatabase/SingleInstance/dockerfiles
     ./buildDockerImage.sh -v 12.1.0.2 -e
     ```
+> **Docker for Mac / Docker for Windows**\
+> Make sure to increase the RAM (at least 8GB) and (if necessary) the disk size of the Docker VM!
 
 ## How to use
 
