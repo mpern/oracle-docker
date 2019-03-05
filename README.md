@@ -33,7 +33,7 @@ setup, if you haven't done so already.
 
     - make sure that `SOURCE_SCHEMA` and `SOURCE_TABLESPACE` match the schema
       and tablespace of the dump
-    - you may want to additionally exclude `GRANT`: `EXCLUDE=USER,GRANT', if your dump contain
+    - you may want to additionally exclude `GRANT`: `EXCLUDE=USER,GRANT`, if your dump contains
       them
 
    (If you don't know, ask the DBA that created the dump. Or try to import and 
