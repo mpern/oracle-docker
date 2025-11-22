@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> **Archived on 2025-11-25**
+
 # Oracle Docker (Compose) Template
 
 A quick and easy way to restore an Oracle DB dump for local development
